@@ -1,11 +1,14 @@
 ---
 layout: page
-title: About
+title: 关于
 permalink: /about/
 ---
+这是2015年开始新建的我的第一个博客，在这里分享自己的技术心得，生活随笔。
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+希望用空闲时间好好改善并维护吧，也希望大家多支持！
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+以下是该博客模板，需要的同学可以参考
+[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
+
+
