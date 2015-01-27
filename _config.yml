@@ -5,7 +5,7 @@ highlighter: pygments
 # Site settings
 title: "L!ar's Blog"
 description: > # this means to ignore newlines until "email:"
-   So close to the flame
+   Gone With The Sin
 
 email: qky1412@gmail.com
 #blog logo
@@ -13,7 +13,7 @@ logo: "/assets/images/logo.png"
 # blog cover
 cover: "/assets/images/background_image.jpg"
 
-name: 'qky'
+name: 'L!ar'
 author: 'qky'
 author_image: "/assets/images/author.jpg"
 
@@ -24,7 +24,7 @@ short_name: qky1412
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+url: "http://qky1412.github.io" # the base hostname & protocol for your site
 baseurl: ""
 
 # social icons and sharing options
