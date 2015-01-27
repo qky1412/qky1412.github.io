@@ -11,11 +11,16 @@ email: qky1412@gmail.com
 #blog logo
 logo: "/assets/images/logo.png"
 # blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: "/assets/images/background_image.jpg"
 
 name: 'qky'
 author: 'qky'
 author_image: "/assets/images/author.jpg"
+
+comments:
+provider: disqus
+disqus:
+short_name: qky1412
 
 paginate:	5
 
