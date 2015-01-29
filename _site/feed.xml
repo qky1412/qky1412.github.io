@@ -2,13 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>L!ar&#39;s Blog</title>
-    <description>So close to the flame
+    <description>Gone With The Sin
 </description>
     <link>http://qky1412.github.io/</link>
     <atom:link href="http://qky1412.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 28 Jan 2015 01:08:06 +0800</pubDate>
-    <lastBuildDate>Wed, 28 Jan 2015 01:08:06 +0800</lastBuildDate>
+    <pubDate>Fri, 30 Jan 2015 01:12:29 +0800</pubDate>
+    <lastBuildDate>Fri, 30 Jan 2015 01:12:29 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>When to use Delegation, Notification, or Observation in iOS</title>
+        <description>&lt;p&gt;&lt;em&gt;初学iOS编程，没仔细考虑就决定用Swift语言进行开发的确欠妥，不过事已至此，也不能给自己不学OC找借口，不管怎么说，自己就是菜鸟一枚，Android学了点皮毛就转战iOS了，希望今后能多写点东西，加深自己的印象并且更好地理解。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;开发中不可避免的需要在页面间传值。在Android开发中自己最常使用的是在&lt;code&gt;Intent&lt;/code&gt;中传递值，当然这种情况是有页面跳转时用的，还有就是对应的&lt;code&gt;startActivityForResult&lt;/code&gt;, 而平常存储少量简易数据时可使用&lt;code&gt;SharedPreference&lt;/code&gt;的存取随时来进行访问。再来就是&lt;code&gt;BroadCast&lt;/code&gt;和&lt;code&gt;Receiver&lt;/code&gt;了。那么iOS呢？今天参阅了许多文章，以下大多摘自
+&lt;a href=&quot;http://blog.shinetech.com/2011/06/14/delegation-notification-and-observation/&quot;&gt;http://blog.shinetech.com/2011/06/14/delegation-notification-and-observation/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;iOS中的相关机制有以下三种:&lt;br&gt;
+1. Delegation&lt;br&gt;
+2. Notification Center&lt;br&gt;
+3. Key Value Obesering  &lt;/p&gt;
+
+&lt;p&gt;首先介绍一下这三种机制是什么:&lt;/p&gt;
+
+&lt;p&gt;上述的三种机制都是两两对象不需要耦合而进行相互通信的方式, 即controller之间不需要相互依赖就能知道自己需要的消息、事件的发生。&lt;/p&gt;
+
+&lt;h2&gt;Delegation&lt;/h2&gt;
+
+&lt;h2&gt;Notification Center&lt;/h2&gt;
+
+&lt;h2&gt;Key Value Obesering&lt;/h2&gt;
+
+&lt;h1&gt;&lt;code&gt;To be continued...&lt;/code&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Fri, 30 Jan 2015 08:07:25 +0800</pubDate>
+        <link>http://qky1412.github.io/ios/2015/01/30/iOS%E4%B8%AD%E4%BD%95%E6%97%B6%E4%BD%BF%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E6%9C%BA%E5%88%B6%E8%BF%9B%E8%A1%8CController%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html</link>
+        <guid isPermaLink="true">http://qky1412.github.io/ios/2015/01/30/iOS%E4%B8%AD%E4%BD%95%E6%97%B6%E4%BD%BF%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E6%9C%BA%E5%88%B6%E8%BF%9B%E8%A1%8CController%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>ios</category>
+        
+      </item>
     
       <item>
         <title>霍比特人-五军之战 观后感</title>
@@ -56,7 +91,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;footer&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;site-footer&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;subscribe&amp;quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/feed.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;tooltip&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;fa fa-rss&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/i&amp;gt; Subscribe!&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;inner&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;section&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;copyright&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;All&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;copyright&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;mailto:qky1412@gmail.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;qky&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/a&amp;gt; &amp;amp;copy; 2015 &amp;amp;bull; All rights reserved.&amp;lt;/section&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;section&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;copyright&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;All&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;copyright&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;mailto:qky1412@gmail.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/a&amp;gt; &amp;amp;copy; 2015 &amp;amp;bull; All rights reserved.&amp;lt;/section&amp;gt;&lt;/span&gt;
    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;section&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;poweredby&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Made&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;http://jekyllrb.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/a&amp;gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/footer&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;

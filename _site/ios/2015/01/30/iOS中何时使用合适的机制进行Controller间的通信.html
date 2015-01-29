@@ -7,7 +7,7 @@
   <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Welcome to Jekyll!</title>
+  <title>When to use Delegation, Notification, or Observation in iOS</title>
   <meta name="description" content="Gone With The Sin
 " />
 
@@ -16,7 +16,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <link rel="canonical" href="http://qky1412.github.io/jekyll/update/2014/08/29/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://qky1412.github.io/ios/2015/01/30/iOS%E4%B8%AD%E4%BD%95%E6%97%B6%E4%BD%BF%E7%94%A8%E5%90%88%E9%80%82%E7%9A%84%E6%9C%BA%E5%88%B6%E8%BF%9B%E8%A1%8CController%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html">
 
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!--  <link rel="stylesheet" href=""> -->
@@ -38,16 +38,16 @@
       <article class="post">
         
         <div class="article-image">
-          <div class="post-image-image" style="background-image: url(/assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg)">
+          <div class="post-image-image" style="background-image: url(/assets/article_images/andreasbg.png)">
             Article Image
           </div>
           <div class="post-meta">
-            <h1 class="post-title">Welcome to Jekyll!</h1>
+            <h1 class="post-title">When to use Delegation, Notification, or Observation in iOS</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">qky</h4>
               on
-              <time datetime="2014-08-29 22:34">29 Aug 2014</time>
+              <time datetime="2015-01-30 08:07">30 Jan 2015</time>
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
             <div style="text-align:center">
@@ -64,34 +64,34 @@
            
             <h5 class="index-headline featured"></h5>
           
-          <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve --watch</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+          <p><em>初学iOS编程，没仔细考虑就决定用Swift语言进行开发的确欠妥，不过事已至此，也不能给自己不学OC找借口，不管怎么说，自己就是菜鸟一枚，Android学了点皮毛就转战iOS了，希望今后能多写点东西，加深自己的印象并且更好地理解。</em></p>
 
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>开发中不可避免的需要在页面间传值。在Android开发中自己最常使用的是在<code>Intent</code>中传递值，当然这种情况是有页面跳转时用的，还有就是对应的<code>startActivityForResult</code>, 而平常存储少量简易数据时可使用<code>SharedPreference</code>的存取随时来进行访问。再来就是<code>BroadCast</code>和<code>Receiver</code>了。那么iOS呢？今天参阅了许多文章，以下大多摘自
+<a href="http://blog.shinetech.com/2011/06/14/delegation-notification-and-observation/">http://blog.shinetech.com/2011/06/14/delegation-notification-and-observation/</a></p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>iOS中的相关机制有以下三种:<br>
+1. Delegation<br>
+2. Notification Center<br>
+3. Key Value Obesering  </p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+<p>首先介绍一下这三种机制是什么:</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+<p>上述的三种机制都是两两对象不需要耦合而进行相互通信的方式, 即controller之间不需要相互依赖就能知道自己需要的消息、事件的发生。</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">footer</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;site-footer&quot;</span><span class="o">&gt;</span>
- <span class="o">&lt;</span><span class="nx">a</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;subscribe&quot;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;/feed.xml&quot;</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">span</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;tooltip&quot;</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">i</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;fa fa-rss&quot;</span><span class="o">&gt;&lt;</span><span class="err">/i&gt; Subscribe!&lt;/span&gt;&lt;/a&gt;</span>
-  <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="nx">section</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;copyright&quot;</span><span class="o">&gt;</span><span class="nx">All</span> <span class="nx">content</span> <span class="nx">copyright</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;mailto:qky1412@gmail.com&quot;</span><span class="o">&gt;</span><span class="nx">L</span><span class="o">!</span><span class="nx">ar</span><span class="o">&lt;</span><span class="err">/a&gt; &amp;copy; 2015 &amp;bull; All rights reserved.&lt;/section&gt;</span>
-   <span class="o">&lt;</span><span class="nx">section</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;poweredby&quot;</span><span class="o">&gt;</span><span class="nx">Made</span> <span class="kd">with</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://jekyllrb.com&quot;</span><span class="o">&gt;</span> <span class="nx">Jekyll</span><span class="o">&lt;</span><span class="err">/a&gt;&lt;/section&gt;</span>
-  <span class="o">&lt;</span><span class="err">/div&gt;</span>
-<span class="o">&lt;</span><span class="err">/footer&gt;</span></code></pre></div>
+<h2>Delegation</h2>
+
+<h2>Notification Center</h2>
+
+<h2>Key Value Obesering</h2>
+
+<h1><code>To be continued...</code></h1>
 
         </section>
         <footer class="post-footer">
           <section class="share">
             
               
-                <a class="icon-facebook" href="//www.facebook.com/sharer.php?t=Welcome+to+Jekyll%21&amp;u=http://qky1412.github.io/jekyll/update/2014/08/29/welcome-to-jekyll"
+                <a class="icon-facebook" href="//www.facebook.com/sharer.php?t=When+to+use+Delegation%2C+Notification%2C+or+Observation+in+iOS&amp;u=http://qky1412.github.io/ios/2015/01/30/iOS中何时使用合适的机制进行Controller间的通信"
                   onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
                 <i class="fa fa-facebook"></i><span class="hidden">facebook</span>
                 </a>
@@ -111,7 +111,7 @@
               <h4>qky</h4>
               <p class="bio"></p>
               <hr>
-              <p class="published">Published <time datetime="2014-08-29 22:34">29 Aug 2014</time></p>
+              <p class="published">Published <time datetime="2015-01-30 08:07">30 Jan 2015</time></p>
             </section>
           </div>
           
